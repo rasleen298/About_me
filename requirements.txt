@@ -260,7 +260,7 @@ QDarkStyle==2.7
 QtAwesome==0.5.7
 qtconsole==4.4.3
 QtPy==1.6.0
-requests==2.19.1
+requests==2.20.0
 requests-oauthlib==1.2.0
 resampy==0.2.2
 rope==0.12.0
