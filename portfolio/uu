@@ -1,0 +1,10 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=rasso
+Group=www-data
+WorkingDirectory=/home/rasso/deployed_portfolio
+
+ExecStart=/home/rasso/deployed/myvenv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/rasso/deployed_portfolio/portfolio.sock portfolio.wsgi:application
