@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'dajwc*0d5@s!d)=gr40m@)77o9)%e*iy%g+ob+1f0@+1cr(c#6'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dajwc*0d5@s!d)=gr40m@)77o9)%e*iy%g+ob+1f0@+1cr(c#6')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '<your key here>')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfoliodb',
+        'NAME': '<your database name here>',
         'USER': 'rasleen',
-        'PASSWORD':'078383372ras',
+        'PASSWORD':'<****>',
         'HOST': 'localhost',
         'PORT':'5432',
     }
